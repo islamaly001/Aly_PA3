@@ -4,8 +4,8 @@ class StepFour{
     static Random rm=new Random();
     static int count=0, cor=0, incor=0;
     public static void main(String[] args) {
-        System.out.println("Difficulty level");
-        System.out.println("Enter Level number ");
+
+        System.out.println("Enter Difficulty Level number ");
         int lb=sc.nextInt();
         switch(lb){
             case 1:while(count< 10){
@@ -21,6 +21,24 @@ class StepFour{
                 count++;
                 int n1=rm.nextInt(100);
                 int n2=rm.nextInt(100);
+                Random rnum = new Random();
+                mult(n1, n2);
+            }
+                percen();
+                break;
+            case 3:while(count< 10){
+                count++;
+                int n1=rm.nextInt(1000);
+                int n2=rm.nextInt(1000);
+                Random rnum = new Random();
+                mult(n1, n2);
+            }
+                percen();
+                break;
+            case 4:while(count< 10){
+                count++;
+                int n1=rm.nextInt(10000);
+                int n2=rm.nextInt(10000);
                 Random rnum = new Random();
                 mult(n1, n2);
             }
